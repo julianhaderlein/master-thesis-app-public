@@ -1,0 +1,1 @@
+ALTER TABLE `transactions` ADD `currency` text DEFAULT 'EUR' NOT NULL;

@@ -1,0 +1,23 @@
+# Excel temp files
+~$*
+
+# ADB backup / extracted device data
+extract*/
+
+# JetBrains Junie AI agent memory
+.junie/
+
+# Node dependencies
+node_modules/
+
+# Expo local state
+.expo/
+
+# Android build artifacts
+android/build/
+android/.gradle/
+android/.kotlin/
+
+# Security analysis artifacts
+security-analysis/work-store/
+*.pcap

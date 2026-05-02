@@ -1,0 +1,17 @@
+{
+  "name": "autobase-decryption-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Standalone scripts to demonstrate Autobase at-rest encryption in the extracted ADB backup.",
+  "scripts": {
+    "decrypt-at-rest": "node decrypt-autobase.mjs",
+    "decrypt-in-transit": "node decrypt-network-capture.mjs"
+  },
+  "dependencies": {
+    "autobase": "^7.25.1",
+    "b4a": "^1.6.7",
+    "blind-encryption-sodium": "^3.0.0",
+    "corestore": "^7.7.0",
+    "sodium-universal": "^4.0.0"
+  }
+}

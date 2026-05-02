@@ -1,0 +1,94 @@
+{
+  "private": true,
+  "name": "bare-expo",
+  "description": "Example of embedding Bare in an Expo application",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "gp": "expo run:android -d Pixel_9a --port 8083",
+    "sm": "expo run:android -d SM_S918B --port 8084",
+    "e7": "expo run:android -d Pixel_7a --port 8085",
+    "e9": "expo run:android -d Pixel_9_Pro_XL --port 8086",
+    "build-schema": "node ./builder/builder.js",
+    "pack:backend": "npx bare-pack --host ios --host android --linked --out generated/app.bundle.js backend/backend.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/bare-expo.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/bare-expo/issues"
+  },
+  "homepage": "https://github.com/holepunchto/bare-expo#readme",
+  "dependencies": {
+    "@expo/vector-icons": "^15.0.3",
+    "autobase": "^7.25.1",
+    "b4a": "^1.7.3",
+    "babel-plugin-inline-import": "^3.0.0",
+    "bare-crypto": "^1.13.0",
+    "bare-path": "^3.0.0",
+    "bare-process": "^4.2.2",
+    "bare-signals": "^4.2.0",
+    "bare-url": "^2.3.2",
+    "blind-encryption-sodium": "^3.0.0",
+    "blind-pairing": "^2.3.1",
+    "compact-encoding": "^2.19.0",
+    "corestore": "^7.7.0",
+    "crypto": "npm:bare-node-crypto@^1.0.0",
+    "drizzle-orm": "^0.45.1",
+    "expo": "~54.0.33",
+    "expo-build-properties": "^1.0.10",
+    "expo-camera": "^17.0.10",
+    "expo-clipboard": "^8.0.8",
+    "expo-constants": "^18.0.13",
+    "expo-crypto": "^15.0.8",
+    "expo-drizzle-studio-plugin": "^0.2.1",
+    "expo-file-system": "^19.0.21",
+    "expo-haptics": "^15.0.8",
+    "expo-linking": "^8.0.11",
+    "expo-router": "~6.0.23",
+    "expo-secure-store": "~15.0.8",
+    "expo-sqlite": "^16.0.10",
+    "expo-system-ui": "^6.0.9",
+    "framed-stream": "^1.0.1",
+    "hrpc": "^4.3.0",
+    "hyperdispatch": "^1.4.4",
+    "hyperschema": "github:helloplayer1/hyperschema",
+    "hyperswarm": "^4.16.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-error-boundary": "^6.1.0",
+    "react-native": "^0.81.5",
+    "react-native-b4a": "^0.0.4",
+    "react-native-bare-kit": "^0.12.0",
+    "react-native-qrcode-svg": "^6.3.21",
+    "react-native-safe-area-context": "^5.6.2",
+    "react-native-screens": "~4.16.0",
+    "react-native-svg": "^15.15.3",
+    "z32": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/b4a": "^1.6.5",
+    "@types/react": "~19.1.10",
+    "chokidar-cli": "^3.0.0",
+    "drizzle-kit": "^0.31.8",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.8.0",
+    "prettier-config-standard": "^7.0.0",
+    "typescript": "^5.9.3"
+  },
+  "imports": {
+    "crypto": {
+      "bare": "bare-crypto",
+      "default": "crypto"
+    },
+    "crypto/*": {
+      "bare": "bare-crypto/*",
+      "default": "crypto/*"
+    }
+  }
+}
